@@ -1,0 +1,160 @@
+# Apuntes Git
+
+git-scm.com
+
+**sistema de control de versión** (historial de todos los cambios del proyecto) **distribuido** (que existe una copia en diferentes lugares)
+
+**git -h**
+
+**git —help**  (te muestra comandos comúnes que se puede usar)
+
+<aside>
+✨ Los textos en itálica son placeholders
+
+</aside>
+
+Comandos terminal (**Git Bash**):
+
+**ls** (listado de directorios) 
+
+**cd** (change directory)
+
+**cd ..** (volver atrás)
+
+**pwd** (dónde estoy?)
+
+**mk dir “nombre de carpeta”** (crear carpeta)
+
+**clear** (limpiar consola)
+
+Configuración de Git:
+
+**git config —global** (configuración global ya que afecta la totalidad de los proyectos)
+
+**git config —global user.name “*usuario*”**
+
+**git config —global user.email “*email*”**
+
+Git init
+
+touch *hellogit.py* (crea un archivo python con ese nombre)
+
+**git init** (indicamos inicializaR EL CONTEXTO DE UN CONTROL DE VERSIONES ACÁ, acá se crea el repositorio.)
+
+Ramas en git:
+
+Rama Master / Main / Trunk: rama principal 
+
+**git branch -m *main*** (cambia nombre de master a main)
+
+Git ADD & COMMIT:
+
+**git status** (muestra cuantos commits se han hecho, muestra archivos del fichero y muestra en rojo los que no se han guardado osea “untracked”)
+
+**git add** *“archivo”* (pasa de untrucked a unstaged y rn git status se mostraría en verde)
+
+git add. (añade todos los ficheros pendientes)
+
+git commit (no se puede realizar un commit sin insertarle un comentario para esto usar)
+
+**git commit -m “***este es mi primer commit***”**
+
+Git LOG & STATUS:
+
+**git log** (muestra un registro de los commits, o cambios en ficheros.)
+
+git log —graph (muestra el log con una línea de seguimiento)
+
+git log —graph —pretty=oneline (muestra los commits en una línea)
+
+git log —graph —pretty=oneline —decorate —all —oneline (muestra commits en una línea con sus hash)
+
+GIT CHECKOUT y RESET:
+
+**git checkout** *“nombre del fichero”* (vuelve a versión anterior, descarga de cambios)
+
+**git reset** (va automátimente a la versión original)
+
+GIT ALIAS
+
+**git config —global alias.*nombreinventado*** “log —graph —decorate —all —oneline”
+
+(el alias sirve para condensar y customizar el uso de varios comandos con sólo agregarle el **alias.*nombreinventado***)
+
+GIT IGNORE
+
+en caso de tener un archivo que nunca se querría añadir al repositorio de lo puede ignorar
+
+**touch .gitignore** (crea archivo con lista de archivos ignorados)
+
+****/.archivoaignorar** (así se establecen los archivos a ignorar)
+
+**git add .gitignore** (le pides al repositorio que tenga en consideración la lista de ignorados)
+
+GIT DIFF
+
+**git diff** (muestra las modificaciones hechas y qué en concreto fue lo que se alteró encontraste al último commit)
+
+DESPLAZAMIENTO por ramas
+
+**git checkout *cd71041*** (moverse mediante commits mediante sus id/hash)
+
+GIT RESET HARD Y REFLOG
+
+**git reset —hard *44abb8f*** (en caso de existir 4 commits y estamos en el punto extremo más lejano del inicio. Si quisiese retornar a una instancia por ejemplo el 2ndo commit, volvemos al 2ndo commit como nuestro punto extremo más lejano y se ha perdido esos avances como el 3ero y 4rto commit. ni en git log se muestra. Para revertirlo se debe poner el id del 4rto commit que se “perdió”. Sirve tanto para atrás como para adelante.)
+
+**git reflog** (se muestran absolutamente todos los registros inclusos los que se “perdieron” con un reset hard)
+
+GIT TAG
+
+**git tag *clase_1***(Los tags suelen usarse para referenciar puntos importantes. Por ejemplo para darle número a la versión.)
+
+HEAD es un puntero de dónde estamos ubicados.
+
+GIT BRANCH Y SWITCH
+
+**git branch *login*** (crea una rama con el nombre indicado)
+
+**git switch *login*** (se posiciona en la rama indicada)
+
+GIT MERGE
+
+**git merge *main*** (crea un nuevo commit fusionando los cambios en la instancia en la que se encuentra más los cambios de dónde se desea copiar)
+
+CONFLICTOS EN GIT
+
+Al intentar fusionar commits se da cuenta de que se han sobre escritos mismas líneas de código.
+
+Para corregirlo, corregir lineas, status, add, nuevo commit.
+
+GIT STASH
+
+Cuando necesitás moverte a otra rama, pero tenés cambios sin terminar pero como todavía no podes commitearlo, guarda temporalmente WIP hasta que vuelvas para terminarlo.
+
+**git stash** (pone en WIP cambios en un fichero diferente cuando necesitás cambiar tu ubicación)
+
+**git stash list** (muestra lista de WIP stasheados)
+
+**git stash pop** (retomar laburo WIP)
+
+Reintración en GIT
+
+**git diff login** (revisar diferencias de un fichero a otra rama)
+
+proceso inverso de una rama a otra.
+
+ELIMINACIÓN DE RAMAS
+
+**git branch -d *login*** (elimina rama seleccionada)
+
+Con un reflog se lo puede volver a ver tras ser eliminado y recuperarlo con checkout.
+
+Sin embargo si se quisiese hacer switch no se puede ya que no existe la rama.
+
+INTRODUCCIÓN GITHUB
+
+git =/= github
+
+git = sistema de control de versiones
+
+github = plataforma que usa git, subido a una nube la cual permite la colaboración online.
