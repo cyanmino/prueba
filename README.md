@@ -3,3 +3,4 @@ Este repositorio se ha creado con objetivo de albergar distintos proyectos perso
 Objetivos a largo plazo:
 Especializarme en el manejo de GIT
 Manejo de github
+Desarrollo en Python
