@@ -4,3 +4,4 @@ Objetivos a largo plazo:
 Especializarme en el manejo de GIT
 Manejo de github
 Desarrollo en Python
+Especializarme en Machine Learning
