@@ -6,3 +6,4 @@ Manejo de github
 Desarrollo en Python
 Especializarme en Machine Learning
 Especializarme en Inteligencia Artificial
+Desarollo de Apps
