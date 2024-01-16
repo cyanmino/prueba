@@ -1,0 +1,34 @@
+# Python
+
+Escribe texto en consola, al ser variable tipo string va en “” o ‘’.
+
+```python
+print(”Hola mundo”)
+```
+
+escribe número en consola, al ser variable tipo int no lleva comillas.
+
+```python
+print(234234)
+```
+
+Hacer comentarios de una lína
+
+```python
+#comentario
+```
+
+o
+
+```python
+'''
+este es un comentario de múltiples líneas
+puedo escribir en esta línea.
+y en esta también.
+WOW
+'''
+```
+
+Variables
+
+Para nombres de variables compuestas por varias palabras, se utiliza la convención de *snake case*. Esto implica escribir todas las letras en minúscula y separar las palabras con guiones bajos ('_').
