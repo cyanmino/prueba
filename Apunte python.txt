@@ -28,7 +28,18 @@ y en esta también.
 WOW
 '''
 ```
-
 Variables
 
 Para nombres de variables compuestas por varias palabras, se utiliza la convención de *snake case*. Esto implica escribir todas las letras en minúscula y separar las palabras con guiones bajos ('_').
+
+```python
+mi_variable = "variable"
+variable_nulo = None
+```
+
+Mostrar contenido de variable por consola
+
+```python
+mochila = "linterna"
+print(mochila)
+```
