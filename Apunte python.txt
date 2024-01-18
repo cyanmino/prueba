@@ -37,7 +37,7 @@ mi_variable = "variable"
 variable_nulo = None
 ```
 
-Mostrar contenido de variable por consola
+Mostrar contenido de variable por consola.
 
 ```python
 mochila = "linterna"
