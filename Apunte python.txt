@@ -43,3 +43,17 @@ Mostrar contenido de variable por consola.
 mochila = "linterna"
 print(mochila)
 ```
+Se pueden cambiar variables a partir del contenido de otras variables
+
+```python
+# Defino las variables:
+caja_misteriosa_1 = 100
+caja_misteriosa_2 = 200
+caja_misteriosa_3 = 'soy solo texto'
+
+# Intercambio los valores
+caja_misteriosa_1 = caja_misteriosa_3
+caja_misteriosa_2 = caja_misteriosa_3
+```
+
+Type indica tipo de variable
