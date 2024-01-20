@@ -57,3 +57,17 @@ caja_misteriosa_2 = caja_misteriosa_3
 ```
 
 Type indica tipo de variable
+
+```python
+print(type("Kwqy"))
+print(type(32))
+print(type("43"))
+print(type(True))
+print(type(2.71))
+
+<class 'str'>
+<class 'int'>
+<class 'str'>
+<class 'bool'>
+<class 'float'>
+```
