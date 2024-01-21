@@ -71,3 +71,17 @@ print(type(2.71))
 <class 'bool'>
 <class 'float'>
 ```
+Otras variables pueden funcionar como booleanos
+
+Vamos a ver cómo podemos traducir un `string` como `True` o `False`:
+
+> En este caso, el string "Orswch" es traducido como True.
+> 
+
+```
+print(bool("Orswch"))
+
+```
+
+> En este caso, el string vacío es traducido como False.
+>
